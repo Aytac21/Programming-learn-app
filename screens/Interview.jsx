@@ -45,10 +45,6 @@ export default function Interview({ navigation }) {
   const [inputValue, setInputValue] = useState("");
   return (
     <View style={gss.p10}>
-      {/* <Container backgroundColor="green">
-        <Text style={{ color: "white" }}>dasd</Text>
-      </Container> */}
-      {/* <RenderHtml contentWidth={width} source={tableHTML} /> */}
       <View style={styles.inputView}>
         <Icon color="#333" name="search" type="font-awesome" size={20} />
         <TextInput
@@ -61,7 +57,6 @@ export default function Interview({ navigation }) {
       <ScrollView
         style={{
           marginTop: 10,
-          // width: Dimensions.get("screen").width,
           height: windowHeight,
           // flex: 1,
         }}
@@ -76,7 +71,6 @@ export default function Interview({ navigation }) {
               activeOpacity={0.5}
               key={ind}
               onPress={() =>
-                // ToastAndroid.show(String(item.title), ToastAndroid.SHORT)
                 navigation.navigate("Questions", {
                   title: item,
                 })

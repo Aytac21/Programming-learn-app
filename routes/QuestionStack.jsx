@@ -34,7 +34,6 @@ export default function QuestionStack() {
           title: `Questions: ${route.params.title.title}`,
         })}
       />
-      {/* Add this line */}
     </Stack.Navigator>
   );
 }

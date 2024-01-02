@@ -19,22 +19,9 @@ export default function QuizStack() {
       }}
     >
       <Stack.Screen name="QuizScreen" component={QuizScreen} />
-      <Stack.Screen
-        name="PlayQuiz"
-        component={PlayQuiz}
-        // options={{ tabBarStyle: { display: "flex" } }}
-        // options={{ tabBarStyle: { display: "none" } }}
-        // tabBarStyle={{ display: "none" }}
-      />
+      <Stack.Screen name="PlayQuiz" component={PlayQuiz} />
 
       <Stack.Screen name="PlayQuizResult" component={PlayQuizResult} />
-      {/* <Stack.Screen
-        name="Questions"
-        component={Questions}
-        options={({ route }) => ({
-          title: `Interview Questions: ${route.params.title}`,
-        })}
-      /> */}
     </Stack.Navigator>
   );
 }

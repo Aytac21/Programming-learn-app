@@ -17,8 +17,6 @@ const windowHeight = Dimensions.get("window").height;
 export default function Questions({ navigation, route }) {
   const title = route.params?.title;
 
-  // Get the interview questions data based on the selected title
-  // const questionsData = interviewQuestions[title.toLowerCase()];
   const allQuestions = interviewQuestions[title.toLowerCase()];
   const [filteredQuestions, setFilteredQuestions] = useState(allQuestions);
 
@@ -112,29 +110,6 @@ export default function Questions({ navigation, route }) {
           )}
         />
       </ScrollView>
-      {/* <ScrollView style={{ flex: 1, height: windowHeight }}>
-        <FlashList
-          data={questionsData}
-          estimatedItemSize={50}
-          renderItem={({ item }) => (
-            <TouchableOpacity
-              onPress={() =>
-                navigation.navigate("AnswerQuestion", {
-                  title: item,
-                })
-              }
-              key={item.question}
-            >
-              <View style={styles.questionCard}>
-                <Text>
-                  <Text style={{ fontWeight: "bold" }}>{item.difficulty}</Text>:{" "}
-                  {item.title}
-                </Text>
-              </View>
-            </TouchableOpacity>
-          )}
-        />
-      </ScrollView> */}
     </View>
   );
 }
@@ -150,6 +125,5 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     width: "100%",
     boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
-    // backgroundColor: "white",
   },
 });
