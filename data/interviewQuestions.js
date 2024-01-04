@@ -5,24 +5,166 @@ export const interviewQuestions = {
       difficulty: "Çətin",
       answer:
         "DOCTYPE HTML, HTML sənəd tipini və versiyasını bəyan etmək üçündür.",
+      questions: [
+        {
+          question: "HTML-də DOCTYPE-in məqsədi nədir?",
+          options: [
+            "DOCTYPE HTML, HTML sənəd tipini və versiyasını bəyan etmək üçündür.",
+            "DOCTYPE, JavaScript funksiyasıdır.",
+            "DOCTYPE, sənədi stilizasiya etmək üçün istifadə olunur",
+          ],
+          correctAnswer:
+            "DOCTYPE HTML, HTML sənəd tipini və versiyasını bəyan etmək üçündür.",
+        },
+        {
+          question:
+            "DOCTYPE təgini nə üçün istifadə edirik və hansı avantajları verir?",
+          options: [
+            "DOCTYPE, sənədin valid olduğunu yoxlamağa imkan verir.",
+            "DOCTYPE, CSS tətbiq etmək üçün lazım olan tələbləri bildirir.",
+            "DOCTYPE, brauzerə sənədin düzgün tərəfdaşlığı üçün tələb olunan HTML versiyasını bildirir.",
+          ],
+          correctAnswer:
+            "DOCTYPE, brauzerə sənədin düzgün tərəfdaşlığı üçün tələb olunan HTML versiyasını bildirir.",
+        },
+        {
+          question:
+            "DOCTYPE təqi necə işləyir və HTML sənədində hansı mövcud elementləri təyin edir?",
+          options: [
+            "DOCTYPE, JavaScript funksiyonudur və sənədi təhlil edir.",
+            "DOCTYPE, yalnız HTML5 elementlərini təyin edir.",
+            "DOCTYPE, brauzerə HTML sənədin standartlara uyğun olduğunu bildirir.",
+          ],
+          correctAnswer:
+            "DOCTYPE, brauzerə HTML sənədin standartlara uyğun olduğunu bildirir.",
+        },
+        {
+          question: "DOCTYPE təqi olmadan bir HTML sənədi necə davranar?",
+          options: [
+            "DOCTYPE təqsiz sənəd yüklənmir və brauzer sənədi mövcud brauzerlərə uyğun şəkildə emal edir.",
+            "DOCTYPE təqsiz sənəd quirks rejimində işləyər.",
+            "DOCTYPE təqsiz sənəd brauzer tərəfindən tanınmır.",
+          ],
+          correctAnswer: "DOCTYPE təqsiz sənəd quirks rejimində işləyər.",
+        },
+        {
+          question:
+            "HTML5-də DOCTYPE təqi necə dəyişib, əlavə imkanlar nələrdən ibarətdir?",
+          options: [
+            "HTML5-də DOCTYPE təqi artıq istifadə edilmir və sənəd avtomatik olaraq HTML5 olaraq qəbul olunur.",
+            "HTML5-də DOCTYPE təqi daha kompleks və detallıdır.",
+            "HTML5-də DOCTYPE təqi daha sadədir və xüsusilə mövcud elementlərə uyğun gəlir.",
+          ],
+          correctAnswer:
+            "HTML5-də DOCTYPE təqi daha sadədir və xüsusilə mövcud elementlərə uyğun gəlir.",
+        },
+      ],
     },
     {
       title: "HTML5-də bəzi yeni xüsusiyyətlər hansılardır?",
       difficulty: "Asan",
       answer:
         "HTML5 bir çox yeni xüsusiyyətlər təqdim edir, məsələn, semantik elementlər, multimedia dəstəyi və təkmilləşmiş form nəzarətləri.",
+      questions: [
+        {
+          question: "HTML5-də <article> elementi nə üçün istifadə olunur?",
+          options: [
+            "Mətn məzmununu qruplaşdırmaq üçün.",
+            "Reklam elementi olaraq.",
+            "Məqalə və xəbərləri qruplaşdırmaq üçün.",
+          ],
+          correctAnswer: "Məqalə və xəbərləri qruplaşdırmaq üçün.",
+        },
+        {
+          question: "HTML5-də <canvas> elementi nə üçün istifadə olunur?",
+          options: [
+            "Ses fayllarını təsvir etmək üçün.",
+            "Görüntüləri redaktə etmək üçün.",
+            "Sürüşməsiz və görsəli animasiyalar yaratmaq üçün.",
+          ],
+          correctAnswer: "Sürüşməsiz və görsəli animasiyalar yaratmaq üçün.",
+        },
+        {
+          question: "HTML5-də <video> və <audio> elementləri nəyə xidmət edir?",
+          options: [
+            "Sosial media paylaşımları üçün.",
+            "Ses və video fayllarını yerləşdirmək üçün.",
+            "Tablo elementlərini təyin etmək üçün.",
+          ],
+          correctAnswer: "Ses və video fayllarını yerləşdirmək üçün.",
+        },
+        {
+          question:
+            "HTML5-də <input> elementinin type atributlarından bəziləri hansılardır?",
+          options: [
+            "text, password, checkbox",
+            "image, audio, video",
+            "dropdown, calendar, map",
+          ],
+          correctAnswer: "text, password, checkbox",
+        },
+        {
+          question:
+            "HTML5-də <details> və <summary> elementləri nə üçün istifadə olunur?",
+          options: [
+            "Ses və video fayllarını təsvir etmək üçün.",
+            "Mətn məzmununu göstərmək və göndərmək üçün.",
+            "Məlumatı gizlətmək və göstərmək üçün.",
+          ],
+          correctAnswer: "Məlumatı gizlətmək və göstərmək üçün.",
+        },
+      ],
     },
     {
       title: "<div> və <span> teqləri arasındakı fərq nədir?",
       difficulty: "Asan",
       answer:
         "<div> və <span> teqləri hər ikisi də məzmunu qruplaşdırmaq üçündür, amma <div> blok səviyyəli elementdir və <span> isə inline elementdir.",
+      questions: [
+        {
+          question: "HTML-də <div> və <span> teqlərinin məqsədi nədir?",
+          options: [
+            "<div> və <span> teqləri hər ikisi də məzmunu qruplaşdırmaq üçündür.",
+            "<div> teqi məlumatı blok şəkildə qruplaşdırmaq üçündür, <span> isə məlumatı inline şəkildə qruplaşdırmaq üçündür.",
+            "<div> və <span> teqləri eyni məqsədlə istifadə olunur və fərqləri yoxdur.",
+          ],
+          correctAnswer:
+            "<div> və <span> teqləri hər ikisi də məzmunu qruplaşdırmaq üçündür.",
+        },
+      ],
     },
     {
       title: "Semantik HTML istifadəsini izah edin.",
       difficulty: "Orta",
       answer:
         "Semantik HTML məzmunun təsvirindən çox onun mənasını vurğulamağa nail olmaq üçündür.",
+      questions: [
+        {
+          question: "Semantik HTML nə üçün əhəmiyyətlidir?",
+          options: [
+            "HTML sənədinin valid olduğunu yoxlamaq üçündür.",
+            "Məzmunun strukturunu və mənasını düzgün şəkildə təsvir etmək üçündür.",
+            "CSS tətbiq etmək üçün lazım olan tələbləri bildirir.",
+          ],
+          correctAnswer:
+            "Məzmunun strukturunu və mənasını düzgün şəkildə təsvir etmək üçündür.",
+        },
+        {
+          question: "Semantik HTML istifadə etmənin bir sıxıntısı varmı?",
+          options: [
+            "CSS tətbiq etmək üçün lazım olan tələbləri bildirir.",
+            "Sənədin valid olduğunu yoxlamağa imkan verir.",
+            "Əslində heçbir sıxıntısı yoxdur, daha yaxşı struktur və məna təqdim edir.",
+          ],
+          correctAnswer:
+            "Əslində heçbir sıxıntısı yoxdur, daha yaxşı struktur və məna təqdim edir.",
+        },
+        {
+          question: "Semantik elementlər hansılardır?",
+          options: ["<div>, <span>", "<header>, <footer>", "<bold>, <italic>"],
+          correctAnswer: "<header>, <footer>",
+        },
+      ],
     },
     {
       title: "HTML-də data atributları nədir?",

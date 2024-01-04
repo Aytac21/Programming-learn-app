@@ -5,6 +5,7 @@ import Questions from "../screens/Questions";
 import Interview from "../screens/Interview";
 import AnswerQuestion from "../screens/AnswerQuestion";
 import { interviewQuestions } from "../data/interviewQuestions";
+import AnswerQuiz from "../screens/AnswerQuiz";
 
 const Stack = createNativeStackNavigator();
 
@@ -32,6 +33,13 @@ export default function QuestionStack() {
         component={AnswerQuestion}
         options={({ route }) => ({
           title: `Questions: ${route.params.title.title}`,
+        })}
+      />
+      <Stack.Screen
+        name="AnswerQuiz"
+        component={AnswerQuiz}
+        options={({ route }) => ({
+          title: `Questions`,
         })}
       />
     </Stack.Navigator>

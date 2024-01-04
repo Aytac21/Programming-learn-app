@@ -11,10 +11,11 @@ import { gss } from "../components/globalStyles";
 import { interviewQuestions } from "../data/interviewQuestions";
 import { FlashList } from "@shopify/flash-list";
 import { Questions } from "./Questions";
+import { AnswerQuiz } from "./AnswerQuiz";
 
 const windowHeight = Dimensions.get("window").height;
 
-export default function AnswerQuestion({ route }) {
+export default function AnswerQuestion({ route, navigation }) {
   const title = route.params?.title;
   const questionsData = interviewQuestions[title];
 
@@ -25,6 +26,15 @@ export default function AnswerQuestion({ route }) {
         <Text style={styles.difficulty}>{title.difficulty}</Text>
         <Text style={styles.answerText}>{title.answer}</Text>
       </View>
+      <TouchableOpacity
+        onPress={() =>
+          navigation.navigate("AnswerQuiz", {
+            questions: questionsData,
+          })
+        }
+      >
+        <Text>Next</Text>
+      </TouchableOpacity>
     </View>
   );
 }

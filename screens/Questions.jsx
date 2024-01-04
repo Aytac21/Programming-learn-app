@@ -55,8 +55,6 @@ export default function Questions({ navigation, route }) {
             </TouchableOpacity>
           )}
         />
-
-        {/* FlashList for Medium questions */}
         <Text style={gss.title}>Orta</Text>
 
         <FlashList
